@@ -60,7 +60,7 @@ int main()
     double b = gold -> margin;
 
     //it gave me an error here because it was checkSafety(a, b)
-    bool c = checkSafety(gold);
+    bool c = checkSafety(*gold);
 
     trade(c);
     delete gold;
