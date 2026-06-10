@@ -1,4 +1,5 @@
 #include <iostream>
+#include <vector>
 
 class BaseStrategy
 {
@@ -26,9 +27,13 @@ int main()
 {
     BaseStrategy *A = new BaseStrategy;
     RSISystem B;
+    std::vector<std::string>word;
+
 
     A->CheckSignal();
     delete A;
     B.CheckSignal();
+    //word.push_back(A->CheckSignal());
+    //word.push_back(B.CheckSignal());
 
 }
